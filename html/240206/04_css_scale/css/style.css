@@ -1,0 +1,35 @@
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+section {
+    width: 200px;
+    height: 200px;
+    background-color: #ededed;
+    margin: 50px;
+    perspective: 150px;
+}
+
+.box {
+    width: 100px;
+    height: 100px;
+    background-color: orange;
+}
+
+.box1:hover {
+    transform: scaleX(1.2);
+    transform-origin: left top;
+}
+
+.box2:hover {
+    transform: scaleY(0.5);
+    transform-origin: right bottom;
+}
+
+.box3:hover {
+    transform: scale(1.5);
+    /* transform: scale(1.5, 1.5);  위의 코드는 해당 라인 코드의 의미이다. */
+
+    transform-origin: right bottom;
+}

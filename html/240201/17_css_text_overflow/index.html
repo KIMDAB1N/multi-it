@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>text-overflow</title>
+</head>
+<style>
+    div {
+        width: 400px;
+        border: 1px solid black;
+    }
+
+    #oneline p {
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+    }
+    
+    #lines p {
+        line-height: 2;
+        display: -webkit-box;
+        -webkit-line-clamp: 3;
+        -webkit-box-orient: vertical;
+        overflow: hidden;
+        text-overflow: ellipsis;
+    }
+</style>
+<body>
+    <div id="oneline">
+        <p>F반의 위안샹친은 입학식 날 처음 본 전교 1등 A반의 천재 장즈수에게 첫눈에 반하게 된다. 그녀는 장즈수에게 당당하게 고백하고 전교생이 지켜보는 앞에서 차이고 만다. 하지만 공부는 포기해도 절대 사랑은 포기 않겠다는 결심으로 매일 같이 장즈수에게 다가가고, 우연한 계기로 함께 동거까지 하게 된다. 하지만 냉정한 장즈수의 모습에 위안샹친은 점점 지쳐가고 그녀의 눈물겨운 짝사랑 이야기가 시작된다.</p>
+    </div>
+    <div id="lines">
+        <p>F반의 위안샹친은 입학식 날 처음 본 전교 1등 A반의 천재 장즈수에게 첫눈에 반하게 된다. 그녀는 장즈수에게 당당하게 고백하고 전교생이 지켜보는 앞에서 차이고 만다. 하지만 공부는 포기해도 절대 사랑은 포기 않겠다는 결심으로 매일 같이 장즈수에게 다가가고, 우연한 계기로 함께 동거까지 하게 된다. 하지만 냉정한 장즈수의 모습에 위안샹친은 점점 지쳐가고 그녀의 눈물겨운 짝사랑 이야기가 시작된다.</p>
+    </div>
+</body>
+</html>

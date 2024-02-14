@@ -1,0 +1,12 @@
+/* 전역 속성 css */
+.bold {
+    font-weight: bold;   
+}
+
+.italic {
+    font-style: italic;
+}
+
+#summary {
+    color: palevioletred;
+}

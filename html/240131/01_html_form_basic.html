@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>폼(form) 기초</title>
+</head>
+
+<body>
+    <!-- action은 폼 내부에 작성한 입력값을 어디서 전송할지 서버의 주소를 지정한다.  -->
+    <!-- method는 post와 get으로 나눠지며, 기본값은 get 이다.  -->
+    <form action="https://search.naver.com/search.naver">
+        <!-- 입력 양식 태그의 name 속성으로 입력한 값이 전달된다. -->
+        <input type="search" name="query" />
+        <input type="submit" value="검색" />
+    </form>
+
+    <hr />
+
+    <form action="">
+        <!-- 입력 양식 태그룰 그룹으로 묶는 태그  -->
+        <fieldset>
+            <!-- 각 fieldset에 대한 범례  -->
+            <legend>로그인</legend>
+            <!-- 태초의 label 사용법  -->
+            <label>아이디 <input type="text" id="id" name="login_id"/></label>
+            <!-- label 과 input 이 떨어져 있을 때 사용할 수 있도록 발전된 방법 (id와 for를 이용, id와 for는 서로를 연결해주는 역할)  -->
+            <label for="pw">비밀번호</label>
+            <!-- 비밀번호 필드에는 value 속성이 없다. -->
+            <input type="password" id="pw" name="login_pw">
+            <input type="submit" value="로그인">
+        </fieldset>
+    </form>
+</body>
+
+</html>

@@ -1,0 +1,212 @@
+@import url("https://cdn.jsdelivr.net/gh/wanteddev/wanted-sans@v1.0.1/packages/wanted-sans/fonts/webfonts/variable/split/WantedSansVariable.min.css");
+
+:root {
+    --card-cnt: 4;
+    --card-margin: 2%;
+    --card1-color:pink;
+    --card1-hover-color:rgb(250, 131, 151);
+    --card2-color:skyblue;
+    --card2-hover-color:rgb(45, 158, 202);
+    --card3-color:salmon;
+    --card3-hover-color:rgb(214, 67, 51);
+    --card4-color:palevioletred;
+    --card4-hover-color:rgb(201, 58, 106);
+
+}
+
+body {
+    background-color: rgba(211, 211, 211, 0.623);
+}
+
+#cards-wrap {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    margin-top: 4%;
+}
+
+.cards {
+    width: calc(100% / var(--card-cnt) - var(--card-margin) * 2);
+    height: 20%;
+    border: 0.2px solid #0000003f;
+    margin: 2%;
+    border-radius: 15px;
+    text-align: center
+}
+
+img {
+    margin-top: 10%;
+    width: 55%;
+    height: 37%;
+    border-radius: 100%;
+}
+
+ul {
+    list-style: none;
+}
+
+ul > li {
+    text-align: left;
+    margin-left: 10%; 
+    padding-top: 5%;  
+}
+
+ul > li > a {
+    text-decoration: none;
+    color: black;
+}
+
+.name {
+    margin-top: 3%;
+    font-size: 25px;
+}
+
+.in {
+    margin-top: -5%;
+    color: gray;
+}
+
+.card1 {
+    background-color: rgb(255, 255, 255);
+}
+
+.card1 img {
+    border: 2px solid pink;
+}
+.card1 > button {
+    background-color: var(--card1-color);
+    border: none;
+    padding: 3%;
+    width: 200px;
+    border-radius: 10px;
+    color: white;
+}
+.card1 > button:hover {
+    background-color: var(--card1-hover-color);
+}
+.card1 >ul > li >  a:hover {
+    color: var(--card1-hover-color);
+}
+
+.card1 #top-nav {
+    background-color: var(--card1-color);
+    border-radius: 15px 15px 0px 0px;
+    padding: 15px;
+}
+
+.card2 {
+    background-color: rgb(255, 255, 255);
+}
+.card2 img {
+    border: 2px solid skyblue;
+    height: 180px;
+}
+.card2 > button {
+    background-color: var(--card2-color);
+    border: none;
+    padding: 3%;
+    width: 200px;
+    border-radius: 10px;
+    color: white;
+}
+.card2 > button:hover {
+    background-color: var(--card2-hover-color);
+}
+.card2 >ul > li >  a:hover {
+    color: var(--card2-hover-color);
+}
+
+.card2 #top-nav {
+    background-color: var(--card2-color);
+    border-radius: 15px 15px 0px 0px;
+    padding: 15px;
+}
+
+
+.card3 {
+    background-color: rgb(255, 255, 255);
+}
+.card3 img {
+    border: 2px solid var(--card3-color);
+}
+.card3 > button {
+    background-color: var(--card3-color);
+    border: none;
+    padding: 3%;
+    width: 200px;
+    border-radius: 10px;
+    color: white;
+}
+.card3 > button:hover {
+    background-color: var(--card3-hover-color);
+}
+.card3 >ul > li >  a:hover {
+    color: var(--card3-hover-color);
+}
+
+.card3 #top-nav {
+    background-color: var(--card3-color);
+    border-radius: 15px 15px 0px 0px;
+    padding: 15px;
+}
+
+
+
+
+.card4 {
+    background-color: rgb(255, 255, 255);
+}
+.card4 img {
+    border: 2px solid var(--card4-color);
+    height: 180px;
+}
+.card4 > button {
+    background-color: var(--card4-color);
+    border: none;
+    padding: 3%;
+    width: 200px;
+    border-radius: 10px;
+    color: white;
+}
+.card4 > button:hover {
+    background-color: var(--card4-hover-color);
+}
+.card4 >ul > li >  a:hover {
+    color: var(--card4-hover-color);
+}
+
+.card4 #top-nav {
+    background-color: var(--card4-color);
+    border-radius: 15px 15px 0px 0px;
+    padding: 15px;
+}
+
+#bottom-nav {
+    display: flex;
+    margin-left: 2%;
+}
+
+#bottom-nav .others {
+    width: 2%;
+    height: 30px;
+    border-radius: 100%;
+    display: flex;
+    text-align: center;
+    margin: 10px;
+}
+
+#bottom-nav .others.other1 {
+    background-color: var(--card1-color);
+}
+#bottom-nav .others.other2 {
+    background-color: var(--card2-color);
+}
+#bottom-nav .others.other3 {
+    background-color: var(--card3-color);
+}
+#bottom-nav .others.other4 {
+    background-color: var(--card4-color);
+}
+#bottom-nav .others.other1, #bottom-nav .others.other2, #bottom-nav .others.other3, #bottom-nav .others.other4:hover{
+    cursor: pointer;
+}

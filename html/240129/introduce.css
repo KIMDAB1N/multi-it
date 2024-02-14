@@ -1,0 +1,34 @@
+@font-face {
+    font-family: 'GangwonEduHyeonokT_OTFMediumA';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2201-2@1.0/GangwonEduHyeonokT_OTFMediumA.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+*{
+    font-family: 'GangwonEduHyeonokT_OTFMediumA';
+    font-size: 30px;
+}
+
+body{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+
+img {
+    width: 300px;
+    height: 300px;
+    margin-bottom: 20px;
+}
+
+.me {
+    display: inline;
+    box-shadow: inset 0 -20px 0 rgb(242, 179, 255); 
+}
+
+.login-form{
+    margin-top: 30px;
+}

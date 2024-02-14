@@ -1,0 +1,11 @@
+#fiexd {
+    height: 100px;
+    width: 100%;
+    background-color: lightpink;
+    position: fixed;
+    top: 0px;
+}
+
+p {
+    margin-top: 100px;
+}

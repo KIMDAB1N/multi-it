@@ -1,0 +1,75 @@
+.container {
+        border: 1px solid gray;
+        width: 100%;
+        margin: 20px 0px;
+}
+
+#user-txt {
+        margin: 50px;
+        border: 10px solid lightslategrey;
+        padding: 20px;
+        display: inline;
+}
+
+#parents {
+        background-color: lightgray;
+        height: 200px;
+}
+
+#child {
+        background-color: bisque;
+        width: 100px;
+        height: 100px;
+}
+
+img {
+        display: block;
+}
+
+ul {
+        list-style: none;
+}
+
+a {
+        text-decoration: none;
+}
+
+ul li {
+        background-color: lightskyblue;
+}
+
+#inline  li {
+        /* inline 요소를 사용하면 width, height 조정이 의미가 없어지게 됨. 당연함 inline 특징을 생각해봐 ..  */
+        display: inline;
+        background-color: lightskyblue;
+}
+
+#inline-block li {
+        /*
+        inline-blcok 
+        1) inline 요소에 display : inline-block을 사용할 경우  inline 요소이지만 block 특성 (크기 조정 가능)을 가지게 된다.
+        2) block 요소에 display : inline-block을 사용할 경우 block 요소이지만 inline 특성 (수평 정렬)을 가지게 된다.  
+        */
+        display: inline-block;
+        background-color: lightskyblue;
+        margin: 20px;
+}
+
+.blue-box {
+        width: 150px;
+        height: 150px;
+        background-color: lightblue;
+        margin: 20px 0px;
+}
+
+/* display: none 과 visibility: hidden 모두 요소를 보이지 않게 하는 속성이다.
+but ...
+display: none은 영역의 높이가 잡히지 않지만,
+visibility: hidden은 영역의 높이가 잡힌다. */
+.none {
+        /* display: none;  */
+}
+
+.hidden {
+        /* visibility: hidden; */
+}

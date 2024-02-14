@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>김다빈 실습</title>
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+
+<body>
+    <div id="wrapper">
+        <header>
+            <nav class="menu">
+                <ul class="left-list">
+                    <li><a href="">about</a></li>
+                    <li><a href="">products</a></li>
+                    <li><a href="">services</a></li>
+                    <li><a href="">contact</a></li>
+                </ul>
+            </nav>
+            <img src="../img/따봉 미모티콘.png" alt="아이콘 이미지">
+            <nav class="menu">
+                <ul class="right-list">
+                    <li><a href="">login</a></li>
+                    <li><a href="">join</a></li>
+                </ul>
+            </nav>
+        </header>
+        <main>
+            <form action="#" method="get">
+                <div class="content">
+                    <legend>회원가입 양식(grid 버전)</legend>
+                    <table>
+                        <tr>
+                            <th><label for="user-name" class ="user-name">이름</label></th>
+                            <td><input type="text" id="user-name" required></td>
+                        </tr>
+                        <tr>
+                            <th><label for="user-id" class="user-id">아이디</label></th>
+                            <td><input type="text" id="user-id" required > <button type="button" class="checkbtn" onclick="alert('사용가능한 아이디입니다.')">중복확인</button></td>
+                        </tr>
+                        <tr>
+                            <th><label for="user-pw" class="user-pw">비밀번호</label></th>
+                            <td><input type="password" id="user-pw" required>
+                                <p>※ 비밀번호는 <span>문자, 숫자, 특수문자 (~!@#$%^&*)의 조합 10 ~ 16자리</span>로 입력이 가능합니다.</p>
+                            </td>
+                        </tr>
+                        <tr>
+                            <th><label for="user-pw-chk" class="user-pw-chk">비밀번호 확인</label></th>
+                            <td><input type="password" id="user-pw-chk" required></td>
+                        </tr>
+                        <tr>
+                            <th><label for="user-email" class="user-email">이메일</label></th>
+                            <td><input type="text" id="user-email" required> @ <input type="text">
+                                <select name="" id="">
+                                    <option value="self">직접입력</option>
+                                    <option value="naver">naver.com</option>
+                                    <option value="google">gmail.com</option>
+                                    <option value="kakao">kakao.com</option>
+                                </select>
+                                <button type="button"  class="checkbtn" onclick="alert('사용가능한 이메일입니다.')">이메일 중복확인</button>
+                            </td>
+                        </tr>
+                        <tr>
+                            <th><label for="grade-class">학년/반</label></th>
+                            <td>
+                                <select name="" id="grade-class">
+                                    <option value="">선택</option>
+                                    <option value="freshman">1</option>
+                                    <option value="sophomore">2</option>
+                                    <option value="junior">3</option>
+                                    <option value="senior">4</option>
+                                </select> 학년
+                                <select name="" id="grade-class">
+                                    <option value="">선택</option>
+                                    <option value="a">A</option>
+                                    <option value="b">B</option>
+                                    <option value="c">C</option>
+                                    <option value="d">D</option>
+                                </select> 반
+                            </td>
+                        </tr>
+                    </table>
+                    <div id="btn-container">
+                        <button type="reset">초기화</button>
+                        <button type="submit">회원가입</button>
+                    </div>
+                </div>
+            </form>
+        </main>
+        <footer>
+            <div>
+                <p>상호 : DABANGZZANG | 대표 : 김다빈 | 개인정보관리책임자 : 김다빈 | 이메일 : <a href="mailto:dabangzzang@kakao.com">dabangzzang@kakao.com </a></p>
+                <p>주소 : 블라블라블라블라 | 사업자등록번호 : 2001-10-00000</p>
+                <br>
+                <p><a href="">사업자정보확인</a> | <a href="">홈페이지 이용약관</a> | <a href="">개인정보처리방침</a></p>
+                <br>
+                <p>© 2024. KIMDABIN Co. all rights reserved.</p>
+            </div>
+        </footer>
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,197 @@
+@font-face {
+    font-family: 'omyu_pretty';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2304-01@1.0/omyu_pretty.woff2') format('woff2');
+    font-weight: normal;
+    font-style: normal;
+}
+
+* {
+    box-sizing: border-box;
+    font-family: 'omyu_pretty';
+    margin: 0px;
+    padding: 0px;
+}
+
+/* 헤더  */
+header {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    font-size: 20px;
+    box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.295);
+}
+
+img {
+    width: 6%;
+    margin-right: 20%;
+}
+
+ul {
+    display: flex;
+    list-style-type: none;
+}
+
+ul>li {
+    padding: 30px 20px;
+}
+
+ul>li:hover{
+    background-color: #ffb6c1;
+}
+
+ul>li>a {
+    text-decoration: none;
+    color: darkslategray;
+}
+
+#left-list {
+    float: left;
+}
+
+#right-list {
+    float: right;
+}
+
+/* 메인  */
+main {
+    display: flex;
+    justify-content: left;
+    width: 80%;
+    margin-left: 15%;
+}
+
+.content {
+    margin-top: 5%;
+    width: 100%;
+}
+
+legend {
+    font-size: 25px;
+}
+
+table {
+    margin-top: 1%;
+    width: 135%;
+    font-size: 20px;
+    border-top: 2.5px solid #ffb6c1;
+    border-bottom: 2.5px solid #ffb6c1;
+    border-collapse: collapse;
+}
+
+tr,
+th,
+td {
+    padding: 10px;
+}
+
+tr {
+    border-bottom: 1px dotted #ffb6c1;
+}
+td {
+    padding: 10px;
+}
+
+td > p > span {
+    color: red;
+}
+
+th {
+    text-align: right;
+    background-color: #fff0f5;
+}
+
+#btn-container {
+    width: 135%;
+    text-align: center;
+    margin-top: 5%;
+    margin-bottom: 10%;
+    border-bottom: 2px solid #ffb6c1;
+}
+
+#btn-container > button {
+    width: 200px;
+    padding: 10px;
+    margin-bottom: 4%;
+    background-color: #fff0f5;
+    border: none;
+    border-radius: 5px;
+}
+
+#btn-container > button:hover {
+    background-color: #ffb6c1;
+    cursor: pointer;
+}
+
+
+.user-name::before {
+    content: '*';
+    display: inline-block;
+    margin-right: 10px;
+    color: #ff7d91;
+}
+.user-id::before {
+    content: '*';
+    display: inline-block;
+    margin-right: 10px;
+    color: #ff7d91;
+}
+.user-pw::before {
+    content: '*';
+    display: inline-block;
+    margin-right: 10px;
+    color: #ff7d91;
+}
+.user-pw-chk::before {
+    content: '*';
+    display: inline-block;
+    margin-right: 10px;
+    color: #ff7d91;
+}
+.user-email::before{
+    content: '*';
+    display: inline-block;
+    margin-right: 10px;
+    color: #ff7d91;
+}
+
+input:hover {
+    border: 3px solid inset;
+    border-color: #ffb6c1;
+}
+
+input:focus {
+    background-color: rgba(226, 245, 252, 0.89);
+}
+
+.checkbtn {
+    background-color: #ffb6c1;
+    border-style: none;
+    padding: 4px;
+    border-radius: 5px;
+    color: white;
+}
+.checkbtn:hover{
+    cursor: pointer;
+}
+.checkbtn:active{
+    background-color: #ff7d91;
+}
+
+/* 푸터  */
+footer {
+    width: 100%;
+    height: 150px;
+    background-color: #ff7d91;
+    color: white;
+    font-size: 15px;
+    text-align: center;
+}
+
+footer > div {
+    padding-top: 2%;
+}
+
+footer > div > p > a {
+    text-decoration: none;
+    color: white;
+}

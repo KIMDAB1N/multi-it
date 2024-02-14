@@ -1,0 +1,26 @@
+div {
+    width: 40%;
+    height: 100px;
+}
+
+.box1 {
+    background-color: gold;
+    float: right;
+}
+
+.box2 {
+    background-color: darkcyan;
+    float: right;
+    clear: right;
+    float: none;
+}
+
+.box3 {
+    background-color: plum;
+    float: right;
+}
+
+.box4 {
+    border: 1px solid;
+    float: none; 
+}

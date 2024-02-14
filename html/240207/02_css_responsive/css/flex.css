@@ -1,0 +1,64 @@
+:root {
+    --item-count : 4;
+    --item-margin: 1%;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+#wrapper {
+    display: flex;
+    flex-direction: column;
+}
+
+body {
+    background-color: beige;
+}
+
+header {
+    height: 100px;
+    background-color: pink;
+}
+
+nav {
+    height: 100px;
+    background-color: palevioletred;
+}
+
+section {
+    background-color: lightcoral;
+    overflow: hidden;
+    padding: 2%;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+section>div {
+    height: 170px;
+    width: calc(100% / var(--item-count) - var(--item-margin) * 2);
+    background-color: lightskyblue;
+    margin: 1%;
+    border-radius: 5px;
+}
+
+footer {
+    height: 100px;
+    background-color: lightsalmon;
+}
+
+
+@media (max-width: 768px) {
+    section>div {
+        /* width :   100%/div 개수 - margin값  */
+        width: 29%;        /* 한 줄에 박스 3개 margin : 2 (앙옆 합) */
+    }
+}
+
+@media (max-width: 425px) {
+    section>div {
+        /* width :   100%/div 개수 - margin값  */
+        width: 48%;          /* 한 줄에 박스 2개 margin : 2 (앙옆 합) */
+    }
+}

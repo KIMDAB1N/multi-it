@@ -1,0 +1,65 @@
+#grid-box {
+    /* height: 500px; */
+    display: inline-grid;
+    grid-template-rows: repeat(3, 100px);    /*100px 을 가진 행 3개를 만들어라*/
+    grid-template-columns: repeat(3, 100px);    /*100px을 가진 열 3개를 만들어라*/
+    background-color: antiquewhite;
+    grid-template-areas:
+        "red-area red-area orange-area"
+        "yellow-area green-area green-area"
+        "blue-area navy-area purple-area";
+        gap: 10px 20px;
+        /* row-gap: 10px;
+        column-gap: 20px; */
+}
+
+.grid-item {
+    width: 100%;
+    height: 100%;
+}
+
+.box1 {
+    background-color: red;
+    grid-area: red-area;
+}
+
+.box2 {
+    background-color: orange;
+    grid-area: orange-area;
+
+}
+
+.box3 {
+    background-color: yellow;
+    grid-area: yellow-area;
+}
+
+.box4 {
+    background-color: green;
+    grid-area: green-area;
+}
+
+.box5 {
+    background-color: blue;
+    grid-area: blue-area;
+}
+
+.box6 {
+    background-color: navy;
+    grid-area: navy-area;
+}
+
+.box7 {
+    background-color: purple;
+    grid-area: purple-area;
+}
+
+.box8 {
+    background-color: black;
+    grid-area: black-area;
+}
+
+.box9 {
+    background-color: grey;
+    grid-area: grey-area;
+}

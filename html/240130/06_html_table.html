@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>테이블 태그</title>
+    <style>
+        table {
+            border: 1px solid black;
+            border-collapse: collapse;
+        }
+        th, td {
+            border: 1px solid black;
+            text-align:  center;
+        }
+    </style>
+</head>
+<body>
+    <!-- 얜 전체적으로 다시 한 번 쳐다보기 ~ -->
+    <table>
+        <tr>
+            <td>열1</td>
+            <td>열2</td>
+            <td>열2</td>
+        </tr>
+        <tr>
+            <td>열4</td>
+            <td>열5</td>
+            <td>열6</td>
+        </tr>
+        <tr>
+            <td>열7</td>
+            <td>열8</td>
+            <td>열9</td>
+        </tr>
+    </table>
+
+    <br/><hr/><br/>
+
+    <!-- caption은 표의 제목을 의미한다. 생략 가능-->
+    <caption>표 캡션</caption>
+
+    <!-- colgroup은 표의 열을 의미한다. 생략 가능 -->
+    <colgroup>
+        <col style="width: 30%;" />
+        <col style="width: 70%;" />
+    </colgroup>
+    
+    <table>
+
+        <!-- thead는 표의 헤더 부분을 의미한다. 생략 가능 -->
+        <thead>
+            <tr>            <!-- tABLE 의 rOW  =  테이블의 행 -->
+                <th>제목 셀1</th>           <!-- tABLE 의 ShELL  =  테이블의 셀-->
+                <th>제목 셀2</th>
+            </tr>
+        </thead>
+
+        <!-- tbody는 표의 본문 부분을 의미한다. 생략 가능하지만 생략해도 자동으로 생성됨 -->
+        <tbody>
+            <tr>
+                <td>본문 내용1</td>
+                <td>본문 내용2</td>
+            </tr>
+        </tbody>
+
+        <!-- tfoot은 표의 요약 부분을 의마한다. 생략 가능 -->
+        <tfoot>
+            <tr>
+                <td>요약 셀1</td>
+                <td>요약 셀2</td>
+            </tr>
+        </tfoot>
+    </table>
+
+    <br/><hr/><br/>
+
+    <table>
+
+        <!-- thead는 표의 헤더 부분을 의미한다. 생략 가능 -->
+        <thead>
+            <tr>            <!-- tABLE 의 rOW  =  테이블의 행 -->
+                <th>제목 셀1</th>           <!-- tABLE 의 ShELL  =  테이블의 셀-->
+                <th>제목 셀2</th>
+            </tr>
+        </thead>
+
+        <!-- tbody는 표의 본문 부분을 의미한다. 생략 가능하지만 생략해도 자동으로 생성됨 -->
+        <tbody>
+            <tr>
+                <td>본문 내용1</td>
+                <td>본문 내용2</td>
+            </tr>
+            <tr>
+                <td colspan="2">본문 내용3</td>
+            </tr>
+            <tr>
+                <td >본문 내용4</td>
+                <td rowspan="2">본문 내용5</td>
+            </tr>
+            <tr>
+                <td>본문 내용6</td>
+            </tr>
+        </tbody>
+
+        <!-- tfoot은 표의 요약 부분을 의미한다. 생략 가능 -->
+        <tfoot>
+            <tr>
+                <td>요약 셀1</td>
+                <td>요약 셀2</td>
+            </tr>
+        </tfoot>
+    </table>
+</body>
+</html>

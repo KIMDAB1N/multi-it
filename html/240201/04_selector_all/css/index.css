@@ -1,0 +1,9 @@
+*  {
+    /* 웹 브라우저다 기본적으로 설정해놓은 패딩과 마진이 있는데 각 브라우저마자 다르기 때문에
+    초기화 해주는 역할 */
+    margin: 0px;
+    padding: 0px;
+}
+h1 {
+    background-color: palevioletred;
+}
